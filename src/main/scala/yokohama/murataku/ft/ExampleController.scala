@@ -8,5 +8,5 @@ import com.twitter.finatra.http.Controller
 class ExampleController @Inject()() extends Controller {
   get("/ping") { (request: Request) => "pong" }
 
-  get("/name") { (request: Request) => response.ok.body("Mura-Mi") }
+  get("/name") { (request: Request) => response.ok.contentType("text/html").body("Mura-Mi") }
 }
