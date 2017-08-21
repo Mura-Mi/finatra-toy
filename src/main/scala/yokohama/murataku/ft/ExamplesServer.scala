@@ -14,6 +14,7 @@ class ExamplesServer extends HttpServer {
     .filter[TraceIdMDCFilter[Request, Response]]
     .filter[CommonFilters]
     .add[ExampleController]
+    .add[PeopleController]
 
   override val modules = Seq()
 
